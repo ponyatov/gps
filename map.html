@@ -1,10 +1,11 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
 <script>
+var Samara = new google.maps.LatLng(53.2099191173465,50.20381670247726);
 var mapOptions = {
 	zoom: 13,
 	mapTypeId: google.maps.MapTypeId.ROADMAP,
-	center: new google.maps.LatLng(53.2099191173465,50.20381670247726)
+	center: Samara
 };
 function init() {new google.maps.Map(document.getElementById('map-canvas'),mapOptions);}
 google.maps.event.addDomListener(window, 'load', init);
